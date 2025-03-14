@@ -4,6 +4,7 @@ import MainLayouts from './Layouts/MainLayouts'
 import HomePage from './Pages/HomePage'
 import AboutPage from './Pages/AboutPage'
 import ServicesPage from './Pages/ServicesPage'
+import UserFormPage from './Pages/UserFormPage'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -11,6 +12,7 @@ const router = createBrowserRouter(
       <Route index element={<HomePage />} />
       <Route path='/about' element={<AboutPage />} />
       <Route path='/services' element={<ServicesPage />} />
+      <Route path='/login' element={<UserFormPage />} />
     </Route>
   )
 )

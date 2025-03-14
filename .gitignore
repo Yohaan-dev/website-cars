@@ -1,1 +1,37 @@
+# Node modules (dependencies installed via npm/yarn)
 node_modules
+
+# Build files (generated when you run `npm run build`)
+dist
+build
+
+# Environment variables (API keys, credentials, etc.)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Logs (system and npm logs)
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Temporary files and caches
+.vscode
+
+# Output from package managers
+package-lock.json
+
+# Dependencies cache (from tools like ESLint, Prettier, etc.)
+.eslintcache
+.next
+out
+
+# GitHub Pages (if using for deployment)
+*.gh-pages
+
+
+

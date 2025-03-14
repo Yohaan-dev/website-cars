@@ -9,27 +9,28 @@ const Footer = () => {
           <div className='container mx-auto px-4 flex flex-col md:flex-row justify-between items-center border-b border-slate-400'>
               <div className='text-center md:text-left space-y-3 md:w-1/2 w-full'>
                   <h1 className='text-xl font-bold'>Request Through Email.</h1>
-                  <p className=''>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa incidunt sed totam autem sit, porro minus iste atque iure maxime deserunt. Doloremque cumque sit, doloribus dolor tempore ab fugit obcaecati.</p>
-                  <div className='flex md:flex-row flex-col items-center justify-center space-y-4 pb-4'>
-                      <div className='w-1/2'>
-                      <label htmlFor="email"></label>
-                      <input type="text" className='w-3/4 outline-none px-3 py-1' placeholder='example@gmail.com' />
-                      </div>
-            <div className='mt-3'>
-              <Link className='bg-blue-950 text-white rounded-sm px-3 py-1 hover:bg-blue-600 hover:text-white' to="/about">send</Link>
-                      </div>
+                  <p className=''>We are excited to introduce you to <span className='font-semibold text-blue-600'>Pupel-Cars</span>, your go-to destination for finding the perfect car that suits your style and needs. Whether you're looking for a sleek sedan, a powerful SUV, or an eco-friendly electric vehicle, we have a wide range of options to choose from.If you have any questions or need assistance, feel free to contact our team and will respond through your email.</p>
+                  <div className='flex md:flex-row flex-col items-center space-x-2 p-3'>
+                    <input
+                        className="focus:outline-none px-3 py-1 rounded-sm ml-3"
+                        type="text"
+                        name="email"
+                        placeholder='example@gmail.com'
+                    />
+                <br />
+              <Link className='bg-blue-950 text-white rounded-sm px-3 py-1 hover:bg-blue-600 hover:text-white' to="/login">send</Link>
                   </div>
               </div>
               <div className='flex flex-col items-center space-y-3'>
                   <h2 className='text-xl font-bold'>Company</h2>
                   <Link className='hover:text-gray-600' to="/about">About</Link>
-                  <Link className='hover:text-gray-600' to="/sell">Sell Your Car</Link>
-                  <Link className='hover:text-gray-600' to="/contact">Contact</Link>
+                  <Link className='hover:text-gray-600' to="/login">Sell Your Car</Link>
+                  <Link className='hover:text-gray-600' to="/login">Contact</Link>
               </div>
-              <div className='flex flex-col items-center space-y-3'>
+              <div className='flex flex-col items-center space-y-3 pb-4'>
                   <h1 className='text-xl font-bold'>Support</h1>
-                  <Link className='hover:text-gray-600' to="/faq">Frequently asked Questions</Link>
-                  <Link className='hover:text-gray-600' to="/terms">Sell On Behalf Terms of Service</Link>
+                  <Link className='hover:text-gray-600' to="/services">Frequently asked Questions</Link>
+                  <Link className='hover:text-gray-600' to="/login">Sell On Behalf Terms of Service</Link>
               </div>
           </div>
 
